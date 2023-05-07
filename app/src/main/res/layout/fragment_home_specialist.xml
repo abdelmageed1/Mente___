@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1InHomeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF9F6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="إختبار الفرز العصبى"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textColor="@color/tv_test_name_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="اختبار الفرز العصبى السريع test screening Neurological quick هواختبار فردى مختصر مصمم للفحص المبدئ السريع
+للتكامل العصبى فى ارتباطه بالتعلم . يتكون اختبار الفرز العصبى من ١٥ اختبار فرعى ، يمكن مالحظة المفحوص أثناء أدائها ،
+بهدف المساعدة فى التعرف على االفراد ذوى صعوبات التعلم ابتداءاً من خمس سنوات . "
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnQNeural"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:paddingRight="0dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/startTest"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2InHomeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1InHomeOne">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF9F6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:text="إختبار الينوي"
+                    android:textColor="@color/tv_test_name_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="
+مقياس الينوي هو مقياس خاص لصعوبات التعلم، يساعد على
+تقييم لغة اطفال المنطوقة والمكتوبة،وتقيس اختبارات الفرعية
+منه بعضًا من جوانب اللغة؛ مثل اللغة الشفوية والكتابة والقراءة والتهجئة
+ "
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnElUnoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:paddingRight="0dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/startTest"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3InHomeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card2InHomeOne">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF9F6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:text="بطاريات فتحى الزيات "
+                    android:textColor="@color/tv_test_name_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="يُعد اختبار البطاريات لستاذ الدكتور فتحي الزيات واحد من أهم
+اختبارات الخاصة بصعوبات التعلم، إذ يتمكن من خله المعلم أو
+اخصائي أو ولي امر من قياس وتقييم المهارات النمائية الخاصة
+به عن طريق المحظة المباشرة لانماطه السلوكية "
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnFathyElZayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:paddingRight="0dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/startTest"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4InHomeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card3InHomeOne">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF9F6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center"
+                    android:text="إختبار مايكل بست"
+                    android:textColor="@color/tv_test_name_color"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/michael_text"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btnMichael"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:paddingRight="0dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/startTest"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

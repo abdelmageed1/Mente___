@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861134089828",
+    "project_id": "mente-68aeb",
+    "storage_bucket": "mente-68aeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861134089828:android:24f946ba3f3df5760f3971",
+        "android_client_info": {
+          "package_name": "com.example.mente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861134089828-aq64qkro5h0lmp9sc9mfbk3lbropuc99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnzbkyV-8-nPNJ3C9T0PBcvsVJBH48FUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861134089828-aq64qkro5h0lmp9sc9mfbk3lbropuc99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

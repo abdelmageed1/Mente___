@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qSupport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="10dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQSupportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="---------"
+            android:textColor="@color/tv_color_questions"
+            android:textSize="22sp"
+            android:fontFamily="@font/cairo"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvQSupportQ1"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ1SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:text="@string/yes"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ1SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:text="@string/no"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+                <!--         Q2           -->
+                <TextView
+                    android:id="@+id/tvQSupportQ2"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ2SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ2SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+                <!--     Q 3          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ3"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ3SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ3SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+                <!--     Q 4          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ4"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ4SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ4SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+
+
+                <!--     Q 5          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ5"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ5SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ5SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+                <!--     Q 6         -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ6"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ6SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ6SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+                <!--     Q 6          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ7"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ7SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ7SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+                <!--     Q 8          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ8"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ8SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ8SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+                <!--     Q 9          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ9"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ9SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ9SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+
+                <!--     Q 10          -->
+
+                <TextView
+                    android:id="@+id/tvQSupportQ10"
+                    style="@style/tvQuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="--------" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_QSupport_Q10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbQ10SupportResulRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbQ10SupportResultWrong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:buttonTint="@color/btn_color"
+                        android:textColor="@color/btn_color"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cairo"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btnEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="تقييم"
+            android:textStyle="bold"
+            android:fontFamily="@font/cairo"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</ScrollView>
+

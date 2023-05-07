@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Mente</string>
+
+
+    <string name="menu_home" translatable="false">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">New? Create an Account!</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="parent">Parent</string>
+    <string name="specialist">Specialist</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="i_have_already_account">I have already an account</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="name_of_student">Name Of Student</string>
+    <string name="years_of_student">Year</string>
+    <string name="days_of_student">Day</string>
+    <string name="months_of_student">Month</string>
+    <string name="add_new_user">Add New User</string>
+    <string name="age_of_student">Age of Student</string>
+    <string name="No">No</string>
+    <string name="rarely">Rarely </string>
+    <string name="sometime_1">Sometime </string>
+    <string name="often_3">often </string>
+    <string name="always_4">always </string>
+    <string name="michael_text" translatable="false">يهــدف هــذا المقيــاس إلى التمييــز بــين الطلبــة العــادين وذوي صعوبات التعلم، حيث قـام الكثـير مـن البـاحثين في هـذا المجـال باستخدام هذا المقياس للكشف عـن النقـاط الحرجـة في الكشـف عن الفئتنين باستخلاص أهـم الخصـائص.</string>
+    <string name="instruction_text" translatable="false">إرشادات</string>
+    <string name="test_text" translatable="false">إختبارات</string>
+    <string name="game_text" translatable="false">ألعاب</string>
+    <string name="parentTest1Text" translatable="false">الإنتباه</string>
+    <string name="yes_ans" translatable="false">نعم</string>
+    <string name="no_ans" translatable="false">لا</string>
+    <string name="next" translatable="false">التالى</string>
+    <string name="goToGame" translatable="false">الإنتقال إلي الألعاب</string>
+    <string name="goToNextTest" translatable="false">الإنتقال إلي الاختبار التالي</string>
+    <string name="addResult" translatable="false">إضافة الدرجة</string>
+    <string name="goToMain" translatable="false">الإنتقال إلي الصفحة الرئيسية</string>
+    <string name="startTest" translatable="false">بدأ الإختبار</string>
+
+
+
+    <string-array name="category_name_quiz">
+        <item> نتائج الفرز العصبى</item>
+        <item> نتائج الينوى</item>
+        <item> نتائج بطاريات فتحى الزيات</item>
+        <item> مايكل بست </item>
+
+    </string-array>
+
+
+</resources>

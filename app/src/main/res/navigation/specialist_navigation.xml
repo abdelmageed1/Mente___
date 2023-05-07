@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mente.Specialist.ui.home.HomeSpecialistFragment"
+        android:label="الصفحة الرئيسية"
+        tools:layout="@layout/fragment_home_specialist">
+        <action
+            android:id="@+id/action_homeFragment_to_QSpeTypeFragment"
+            app:destination="@id/QSpeTypeFragment"
+            app:enterAnim="@anim/animate_farg" />
+        <action
+            android:id="@+id/action_homeFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.mente.Specialist.ui.AboutUsFragment"
+        android:label="fragment_about_us_specialist"
+        tools:layout="@layout/fragment_about_us_specialist" />
+    <fragment
+        android:id="@+id/connectUsFragment"
+        android:name="com.example.mente.Specialist.ui.ConnectUsFragment"
+        android:label="fragment_conact_us_specialist"
+        tools:layout="@layout/fragment_connect_us_specialist" />
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.example.mente.Specialist.ui.RatingFragment"
+        android:label="fragment_rating_specialist"
+        tools:layout="@layout/fragment_rating_specialist" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.mente.Specialist.ui.menuDrawer.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting"
+        />
+    <fragment
+        android:id="@+id/QSpeTypeFragment"
+        android:name="com.example.mente.Specialist.ui.Questions.QSpeTypeFragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_q_spe_type">
+        <action
+            android:id="@+id/action_QSpeTypeFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQSupportkFragment"
+        android:name="com.example.mente.Specialist.ui.Questions.ShowQSupportkFragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_supportk">
+        <action
+            android:id="@+id/action_showQSupportkFragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationSpeNeuralFragment"
+        android:name="com.example.mente.Specialist.ui.Questions.Evaluation.EvaluationSpeNeuralFragment"
+        android:label="نتيجة الإختبار"
+        tools:layout="@layout/fragment_evaluation_spe_neural">
+        <action
+            android:id="@+id/action_evaluationSpeNeuralFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQFourAnsFragment"
+        android:name="com.example.mente.Specialist.ui.Questions.ShowQFourAnsFragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_four_ans"
+        >
+        <action
+            android:id="@+id/action_showQFourAnsFragment_to_evaluatonFathyElZayatFragment3"
+            app:destination="@id/evaluatonFathyElZayatFragment3"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.mente.Student.View.AddStudentFragment"
+        android:label="اختر الطالب"
+        tools:layout="@layout/fragment_add_student"
+        >
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQSupportkFragment"
+            app:destination="@id/showQSupportkFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQFourAnsFragment"
+            app:destination="@id/showQFourAnsFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQTwoAns"
+            app:destination="@id/showQTwoAns" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_QSpeMichaelType"
+            app:destination="@id/QSpeMichaelType" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList5Fragment"
+            app:destination="@id/showQIlllioniList5Fragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList2Fragment"
+            app:destination="@id/showQIlllioniList2Fragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList7Fragment"
+            app:destination="@id/showQIlllioniList7Fragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList3Fragment"
+            app:destination="@id/showQIlllioniList3Fragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList9Fragment"
+            app:destination="@id/showQIlllioniList9Fragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList8Fragment"
+            app:destination="@id/showQIlllioniList8Fragment"
+            app:enterAnim="@anim/animate_farg" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList4Fragment"
+            app:destination="@id/showQIlllioniList4Fragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList6Fragment"
+            app:destination="@id/showQIlllioniList6Fragment"
+            app:enterAnim="@anim/animate_farg" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList11Fragment"
+            app:destination="@id/showQIlllioniList11Fragment"
+            app:enterAnim="@anim/animate_farg" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList12Fragment"
+            app:destination="@id/showQIlllioniList12Fragment"
+            app:enterAnim="@anim/animate_farg" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_showQIlllioniList10Fragment"
+            app:destination="@id/showQIlllioniList10Fragment"
+            app:enterAnim="@anim/animate_farg" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluatonFathyElZayatFragment3"
+        android:name="com.example.mente.Specialist.ui.Questions.Evaluation.EvaluatonFathyElZayatFragment"
+        android:label="نتيجة الإختبار"
+        tools:layout="@layout/fragment_evaluaton_fathy_el_zayat">
+        <action
+            android:id="@+id/action_evaluatonFathyElZayatFragment3_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyStudentFragment"
+        android:name="com.example.mente.Specialist.ui.history.View.HistoryStudentFragment"
+        android:label="سجل الطلاب"
+        tools:layout="@layout/fragment_history_student">
+        <action
+            android:id="@+id/action_historyStudentFragment_to_showRowOfHistoryFragment"
+            app:destination="@id/showRowOfHistoryFragment"
+            app:enterAnim="@anim/animate_farg" />
+    </fragment>
+    <fragment
+        android:id="@+id/showRowOfHistoryFragment"
+        android:name="com.example.mente.Specialist.ui.history.View.ShowRowOfHistoryFragment"
+        android:label="بيانات الطالب"
+        tools:layout="@layout/fragment_show_row_of_history">
+        <action
+            android:id="@+id/action_showRowOfHistoryFragment_to_historyStudentFragment"
+            app:destination="@id/historyStudentFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/historyStudentFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQTwoAns"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList1Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_iist1">
+        <action
+            android:id="@+id/action_showQTwoAns_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList2Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList2Fragment"
+        android:label="الإختبارات"
+
+        tools:layout="@layout/fragment_show_q_illlioni_list2">
+        <action
+            android:id="@+id/action_showQIlllioniList2Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/QSpeMichaelType"
+        android:name="com.example.mente.Specialist.ui.Questions.QSpeMichaelType"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_q_spe_michael_type"
+
+        >
+        <action
+            android:id="@+id/action_QSpeMichaelType_to_evaluationMichealBest"
+            app:destination="@id/evaluationMichealBest"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeMichaelType"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationMichealBest"
+        android:name="com.example.mente.Specialist.ui.Questions.Evaluation.EvaluationMichealBest"
+        android:label="نتيجة الإختبار"
+        tools:layout="@layout/fragment_evaluation_micheal_best">
+        <action
+            android:id="@+id/action_evaluationMichealBest_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList5Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList5Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list5">
+        <action
+            android:id="@+id/action_showQIlllioniList5Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList7Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList7Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list7">
+        <action
+            android:id="@+id/action_showQIlllioniList7Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList3Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList3Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list3">
+        <action
+            android:id="@+id/action_showQIlllioniList3Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList9Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList9Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list9">
+        <action
+            android:id="@+id/action_showQIlllioniList9Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList8Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList8Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list8">
+        <action
+            android:id="@+id/action_showQIlllioniList8Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList4Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList4Fragment"
+        android:label="الإختبارات">
+        <action
+            android:id="@+id/action_showQIlllioniList4Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList6Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList6Fragment"
+        android:label="الإختبارات">
+        <action
+            android:id="@+id/action_showQIlllioniList6Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList11Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList11Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list11">
+        <action
+            android:id="@+id/action_showQIlllioniList11Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList12Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList12Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list12">
+        <action
+            android:id="@+id/action_showQIlllioniList12Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQIlllioniList10Fragment"
+        android:name="com.example.mente.Specialist.ui.Questions.IlllionsQ.ShowQIlllioniList10Fragment"
+        android:label="الإختبارات"
+        tools:layout="@layout/fragment_show_q_illlioni_list10">
+        <action
+            android:id="@+id/action_showQIlllioniList10Fragment_to_evaluationSpeNeuralFragment"
+            app:destination="@id/evaluationSpeNeuralFragment"
+            app:enterAnim="@anim/animate_farg"
+            app:popUpTo="@id/QSpeTypeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="first_name">الإسم الأول</string>
+    <string name="mail">البريد الإلكترونى</string>
+    <string name="sign_up">تسجيل </string>
+    <string name="specialist">أخصائي</string>
+    <string name="parent">ولي أمر</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="create_new_account">أنشئ حساب جديد! </string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="password">كلمة السر</string>
+    <string name="i_have_already_account">لدى حساب بالفعل</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="name_of_student">اسم الطالب</string>
+    <string name="years_of_student">سنة</string>
+    <string name="add_new_user">"إضافة طالب "</string>
+    <string name="age_of_student">سن الطالب</string>
+    <string name="No">لا </string>
+    <string name="sometime_1">أحيانًا</string>
+    <string name="rarely"> نادرًا </string>
+    <string name="often_3">غالبًا </string>
+    <string name="always_4">دائمًا </string>
+    <string name="days_of_student">يوم</string>
+    <string name="months_of_student">شهر</string>
+
+
+</resources>

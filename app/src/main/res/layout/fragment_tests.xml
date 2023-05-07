@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parent.ui.screens.TestsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="@string/parentTest1Text"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الانتباه هو أن طفلك يركز عقله وإحساسه نحو مثير معين سواء كان ذلك مثيرًا داخليًا أو خارجيًا، إليك بعض الأسئلة التي تساعدك على تقييم مدى انتباه طفلك"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest1Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="الإدراك"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الإدراك هو قدرة طفلك على تحقيق الوعي وفهم البيئة المحيطة به، ومعالجة عقله للمعلومات التي تأتي من الحواس، إليك بعض الأسئلة التي تساعدك على تقييم مدى إدراك طفلك"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest2Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="الاستدلال، وتمثيل المعلومات"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الاستدلال وتمثيل المعلومات هما قدرة طفلك على توظيف معلوماته لوصف شيء ما، أو لإيجاد حلول للعوائق التي تواجهه في الحياة اليومية حتى وإن كانت بسيطة، إليك بعض الأسئلة التي ستساعدك على تقييم قدرة طفلك على استخدام المعلومات الموجودة عنده"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest3Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="الذاكرة "
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الذاكرة هي قدرة عقل طفلك على تخزين المعلومات والاحتفاظ بها واسترجاعها عند اللازم، إليك بعض الأسئلة التي ستساعدك على تقييم ذاكرة طفلك"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest4Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="التفكير والتخيل "
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="التفكير والتخيل هما قدرة طفلك على تجميع المعطيات المختلفة وربطها بالخبرة السابقة وإعادة تشكيلها بطريقة أخرى لتناسب الموقف الذي يمر به، إليك بعض الأسئلة التي ستساعدك على تقييم التفكير والتخيل لدى طفلك"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest5Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6InHomeOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAF9F6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="التقليد"
+                        android:fontFamily="@font/cairo_bold"
+                        android:textColor="@color/tv_test_name_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="التقليد هو قدرة طفلك على نمذجة أو محاكاة الآخرين بالقول أو الفعل أو السلوك لتعلم المهارات الحياتية الأساسية والمهارات الجديدة ممن حوله، إليك بعض الأسئلة التي ستساعدك على تقييم التفكير والتخيل لدى طفلك"
+                        android:fontFamily="@font/cairo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/parentTest6Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:paddingRight="0dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="@string/startTest"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/baseline_arrow_circle_left_24"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

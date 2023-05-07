@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="14dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tvQTitleFourAns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="ماذ يقصد ب علوم الحاسب  " />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_QFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <RadioButton
+                android:id="@+id/rbSelect1"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="@string/No"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbSelect2"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:checked="false"
+                android:fontFamily="@font/cairo"
+                android:text="@string/rarely"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbSelect3"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/cairo"
+                android:text="@string/sometime_1"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbSelect4"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/cairo"
+                android:text="@string/often_3"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbSelect5"
+                style="@style/BtnFour"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/cairo"
+                android:text="@string/always_4"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <!--    <Button-->
+        <!--        android:id="@+id/btnNext"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginHorizontal="80dp"-->
+        <!--        android:layout_marginVertical="50dp"-->
+        <!--        android:layout_marginBottom="0dp"-->
+        <!--        android:inputType="text"-->
+        <!--        android:text="التالى"-->
+        <!--        android:textSize="20sp"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/radio_group_QFour" />-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
