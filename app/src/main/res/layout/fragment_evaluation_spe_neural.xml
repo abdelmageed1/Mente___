@@ -67,7 +67,6 @@
                     android:layout_marginVertical="10dp"
                     android:scaleType="center"
                     android:src="@drawable/circle_1"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvEvaluationStudentName" />
@@ -109,7 +108,7 @@
                     android:fontFamily="@font/cairo"
                     android:text="العمر النفسي اللغوى : "
                     android:textColor="@color/black"
-                    android:textSize="22sp"
+                    android:textSize="17sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,15 +118,47 @@
                     android:id="@+id/tvDegreeIIIIinoi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
                     android:fontFamily="@font/cairo"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     android:textStyle="bold"
+                    android:layout_margin="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/tv_degreeText"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <TextView
+                    android:id="@+id/tv_MentalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="28dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="26dp"
+                    android:fontFamily="@font/cairo"
+                    android:text="الدرجة القياسية : "
+            android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_degreeText" />
+
+                <TextView
+                    android:id="@+id/tvMentalDegreeIIIIinoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_MentalText"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDegreeIIIIinoi" />
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

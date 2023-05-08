@@ -50,6 +50,7 @@ class EvaluationSpeNeuralFragment : Fragment() {
         gotoHome()
 
         setDegree()
+        setStandardDegreeIIIIinoi()
 
     }
 
@@ -59,7 +60,7 @@ class EvaluationSpeNeuralFragment : Fragment() {
 // val almiyiynaaRow = DataDegreeOfFathyElZayat.degreeMapFathyElzayat[scoredValue]
             if (scoredValue <= 47) {
 
-                binding.tvDegreeIIIIinoi.text = setDefineQuizNum()
+                binding.tvDegreeIIIIinoi.text = "${setDefineQuizNum()} سنة"
 
 
                 // فاضل العمر العقلى يدخل من الاخصائي ثم بناءا ع العمر العقلى هختار الدرجة القياسية ف الداتا ال فادى بيدخلها
@@ -72,6 +73,7 @@ class EvaluationSpeNeuralFragment : Fragment() {
             binding.tvDegreeIIIIinoi.visibility = View.GONE
         }
     }
+
 
     private fun setDefineQuizNum(): String {
         var psychological_age = when (testName) {
@@ -94,6 +96,153 @@ class EvaluationSpeNeuralFragment : Fragment() {
         return psychological_age!!
 
     }
+
+
+    fun setStandardDegreeIIIIinoi(){
+        if(testName in constant.elIIinoiCategoryList )
+        {
+
+            val mentalAgeMonths = currentStudent.mentalAge.year * 12  + currentStudent.mentalAge.month
+
+            if ( mentalAgeMonths in 30..35)
+            {
+
+                var standardDegree = when(testName){
+                    constant.elIIinoiCategoryList[0] -> DegreeOfIiioni.age_33_month[scoredValue]?.ar
+                    constant.elIIinoiCategoryList[1] -> DegreeOfIiioni.age_33_month[scoredValue]?.vr
+                    constant.elIIinoiCategoryList[2] -> DegreeOfIiioni.age_33_month[scoredValue]?.aa
+                    constant.elIIinoiCategoryList[3] -> DegreeOfIiioni.age_33_month[scoredValue]?.am
+                    constant.elIIinoiCategoryList[4] -> DegreeOfIiioni.age_33_month[scoredValue]?.va
+                    constant.elIIinoiCategoryList[5] -> DegreeOfIiioni.age_33_month[scoredValue]?.vc
+                    constant.elIIinoiCategoryList[6] -> DegreeOfIiioni.age_33_month[scoredValue]?.gc
+                    constant.elIIinoiCategoryList[7] -> DegreeOfIiioni.age_33_month[scoredValue]?.me
+                    constant.elIIinoiCategoryList[8] -> DegreeOfIiioni.age_33_month[scoredValue]?.ac
+                    constant.elIIinoiCategoryList[9] -> DegreeOfIiioni.age_33_month[scoredValue]?.sb
+                    constant.elIIinoiCategoryList[10] ->DegreeOfIiioni.age_33_month[scoredValue]?.ve
+                    constant.elIIinoiCategoryList[11] ->DegreeOfIiioni.age_33_month[scoredValue]?.vm
+
+                    else -> {}
+                }
+
+                binding.tvMentalText.visibility = View.VISIBLE
+                binding.tvMentalDegreeIIIIinoi.visibility = View.VISIBLE
+
+                binding.tvMentalDegreeIIIIinoi.text = standardDegree.toString()
+
+
+            }
+
+
+            if ( mentalAgeMonths in 36..41)
+            {
+
+                var standardDegree = when(testName){
+                    constant.elIIinoiCategoryList[0] -> DegreeOfIiioni.age_36_month[scoredValue]?.ar
+                    constant.elIIinoiCategoryList[1] -> DegreeOfIiioni.age_36_month[scoredValue]?.vr
+                    constant.elIIinoiCategoryList[2] -> DegreeOfIiioni.age_36_month[scoredValue]?.aa
+                    constant.elIIinoiCategoryList[3] -> DegreeOfIiioni.age_36_month[scoredValue]?.am
+                    constant.elIIinoiCategoryList[4] -> DegreeOfIiioni.age_36_month[scoredValue]?.va
+                    constant.elIIinoiCategoryList[5] -> DegreeOfIiioni.age_36_month[scoredValue]?.vc
+                    constant.elIIinoiCategoryList[6] -> DegreeOfIiioni.age_36_month[scoredValue]?.gc
+                    constant.elIIinoiCategoryList[7] -> DegreeOfIiioni.age_36_month[scoredValue]?.me
+                    constant.elIIinoiCategoryList[8] -> DegreeOfIiioni.age_36_month[scoredValue]?.ac
+                    constant.elIIinoiCategoryList[9] -> DegreeOfIiioni.age_36_month[scoredValue]?.sb
+                    constant.elIIinoiCategoryList[10] ->DegreeOfIiioni.age_36_month[scoredValue]?.ve
+                    constant.elIIinoiCategoryList[11] ->DegreeOfIiioni.age_36_month[scoredValue]?.vm
+
+                    else -> {}
+                }
+
+                binding.tvMentalText.visibility = View.VISIBLE
+                binding.tvMentalDegreeIIIIinoi.visibility = View.VISIBLE
+
+                binding.tvMentalDegreeIIIIinoi.text = standardDegree.toString()
+
+
+            }
+
+
+
+            if ( mentalAgeMonths in 42..47)
+            {
+
+                var standardDegree = when(testName){
+                    constant.elIIinoiCategoryList[0] -> DegreeOfIiioni.age_42_month[scoredValue]?.ar
+                    constant.elIIinoiCategoryList[1] -> DegreeOfIiioni.age_42_month[scoredValue]?.vr
+                    constant.elIIinoiCategoryList[2] -> DegreeOfIiioni.age_42_month[scoredValue]?.aa
+                    constant.elIIinoiCategoryList[3] -> DegreeOfIiioni.age_42_month[scoredValue]?.am
+                    constant.elIIinoiCategoryList[4] -> DegreeOfIiioni.age_42_month[scoredValue]?.va
+                    constant.elIIinoiCategoryList[5] -> DegreeOfIiioni.age_42_month[scoredValue]?.vc
+                    constant.elIIinoiCategoryList[6] -> DegreeOfIiioni.age_42_month[scoredValue]?.gc
+                    constant.elIIinoiCategoryList[7] -> DegreeOfIiioni.age_42_month[scoredValue]?.me
+                    constant.elIIinoiCategoryList[8] -> DegreeOfIiioni.age_42_month[scoredValue]?.ac
+                    constant.elIIinoiCategoryList[9] -> DegreeOfIiioni.age_42_month[scoredValue]?.sb
+                    constant.elIIinoiCategoryList[10] ->DegreeOfIiioni.age_42_month[scoredValue]?.ve
+                    constant.elIIinoiCategoryList[11] ->DegreeOfIiioni.age_42_month[scoredValue]?.vm
+
+                    else -> {}
+                }
+
+                binding.tvMentalText.visibility = View.VISIBLE
+                binding.tvMentalDegreeIIIIinoi.visibility = View.VISIBLE
+
+                binding.tvMentalDegreeIIIIinoi.text = standardDegree.toString()
+
+
+            }
+
+
+            if ( mentalAgeMonths in 48..53)
+            {
+
+                var standardDegree = when(testName){
+                    constant.elIIinoiCategoryList[0] -> DegreeOfIiioni.age_48_month[scoredValue]?.ar
+                    constant.elIIinoiCategoryList[1] -> DegreeOfIiioni.age_48_month[scoredValue]?.vr
+                    constant.elIIinoiCategoryList[2] -> DegreeOfIiioni.age_48_month[scoredValue]?.aa
+                    constant.elIIinoiCategoryList[3] -> DegreeOfIiioni.age_48_month[scoredValue]?.am
+                    constant.elIIinoiCategoryList[4] -> DegreeOfIiioni.age_48_month[scoredValue]?.va
+                    constant.elIIinoiCategoryList[5] -> DegreeOfIiioni.age_48_month[scoredValue]?.vc
+                    constant.elIIinoiCategoryList[6] -> DegreeOfIiioni.age_48_month[scoredValue]?.gc
+                    constant.elIIinoiCategoryList[7] -> DegreeOfIiioni.age_48_month[scoredValue]?.me
+                    constant.elIIinoiCategoryList[8] -> DegreeOfIiioni.age_48_month[scoredValue]?.ac
+                    constant.elIIinoiCategoryList[9] -> DegreeOfIiioni.age_48_month[scoredValue]?.sb
+                    constant.elIIinoiCategoryList[10] ->DegreeOfIiioni.age_48_month[scoredValue]?.ve
+                    constant.elIIinoiCategoryList[11] ->DegreeOfIiioni.age_48_month[scoredValue]?.vm
+
+                    else -> {}
+                }
+
+                binding.tvMentalText.visibility = View.VISIBLE
+                binding.tvMentalDegreeIIIIinoi.visibility = View.VISIBLE
+
+                binding.tvMentalDegreeIIIIinoi.text = standardDegree.toString()
+
+
+            }
+
+
+
+
+              if ( mentalAgeMonths < 30 )
+                {
+                    binding.tvMentalText.visibility = View.GONE
+                    binding.tvMentalDegreeIIIIinoi.visibility = View.GONE
+              }
+
+              if ( mentalAgeMonths > 53 )
+                {// لسة مدخلناش باقى الداتا
+                    binding.tvMentalText.visibility = View.GONE
+                    binding.tvMentalDegreeIIIIinoi.visibility = View.GONE
+              }
+
+        }else{
+            binding.tvMentalText.visibility = View.GONE
+            binding.tvMentalDegreeIIIIinoi.visibility = View.GONE
+        }
+    }
+
+
+
 
     private fun setQuizType() {
         when (testName) {

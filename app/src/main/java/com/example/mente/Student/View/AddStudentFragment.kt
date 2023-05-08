@@ -137,6 +137,16 @@ class AddStudentFragment : Fragment() {
                     var monthDate = alter.findViewById<EditText>(R.id.et_AgeMonthOfStudent).text.toString()
                     var dayDate = alter.findViewById<EditText>(R.id.et_AgeDayOfStudent).text.toString()
 
+                    // mental age
+                    var yearMentalAge = alter.findViewById<EditText>(R.id.et_YearMentalAge).text.toString()
+                    var monthMentalAge = alter.findViewById<EditText>(R.id.et_MonthMentalAge).text.toString()
+
+                    if (yearMentalAge.isEmpty() && monthMentalAge.isEmpty())
+                    {
+                        yearMentalAge = "0"
+                        monthMentalAge = "0"
+                    }
+
 
                     if (name.isNotEmpty() && yearsDate.isNotEmpty() &&  monthDate.isNotEmpty() && dayDate.isNotEmpty() ) {
 
@@ -158,7 +168,7 @@ class AddStudentFragment : Fragment() {
 
 
 
-                            var student = Student(name= name,age= StudentAge(age.years,age.months,age.days), ageStr = ageStr)
+                            var student = Student(name= name,age= StudentAge(age.years,age.months,age.days), ageStr = ageStr , mentalAge = StudentAge(yearMentalAge.toInt(),monthMentalAge.toInt()))
                             setStudentInfoToDB(student)
 
                             studentViewModel.mAddStudentFailure.observe(viewLifecycleOwner) { message ->
@@ -166,7 +176,7 @@ class AddStudentFragment : Fragment() {
                             }
                             studentViewModel.mAddStudentSuccess.observe(viewLifecycleOwner) {
                                 if (it) {
-                                    Toast.makeText(context, "Saved", Toast.LENGTH_SHORT).show()
+
                                     alter.dismiss()
 
                                     defineCategoryAndGetActionToNextPage(fabView)

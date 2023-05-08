@@ -105,7 +105,7 @@ class EvaluatonFathyElZayatFragment : Fragment() {
         valueOfQuiz =
             when(scoredValue){
                 in 0..20 -> " لا صعوبات "
-                in 21..40 -> " صعوبات خفيفية "
+                in 21..40 -> " صعوبات خفيفة "
                 in 41..60 -> "صعوبات متوسطة  "
                 else -> "صعوبات شديدة"
             }
